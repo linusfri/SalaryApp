@@ -14,7 +14,7 @@ submitButton.addEventListener("click", () => {
         const salaryString = calculate(dataObject);
         results.value = salaryString;
     } catch (error) {
-        results.innerHTML = error;
+        results.value = error;
     }
 });
 
