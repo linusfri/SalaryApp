@@ -57,3 +57,11 @@ body {
 .button {
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
+
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
