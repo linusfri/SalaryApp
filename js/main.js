@@ -9,11 +9,10 @@ function addGlobalEventListener(type, selector, callback) {
 const submitButton = document.getElementById("submit");
 submitButton.addEventListener("click", () => {
     const results = document.querySelector("#res");
-
     try {
         const dataObject = getFormData();
         const salaryString = calculate(dataObject);
-        results.innerHTML = salaryString;
+        results.value = salaryString;
     } catch (error) {
         results.innerHTML = error;
     }
