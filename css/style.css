@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+body {
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+}
+
+.header-section {
+    background-color: rgb(28, 30, 33);
+    color: lightblue ;
+    padding: 1rem;
+}
+
+.header-section h1 {
+    margin: 0;
+}
+
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 6;
+}
+
+.form-flex {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+    gap: 0.5rem;
+    max-width: 360px;
+    margin: auto;
+}
+
+.form-field {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-result {
+    width: max(250px, 50%);
+    height: min(150px);
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.button {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
